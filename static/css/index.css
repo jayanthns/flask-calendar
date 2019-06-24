@@ -1,0 +1,215 @@
+nav.custom-navbar {
+  background-color: #616161
+}
+
+form.custom-login-form-card {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.error-color {
+  color: red
+}
+
+.input-field .error-text {
+  position: relative;
+  min-height: 18px;
+  display: block;
+  font-size: 12px;
+  color: red;
+}
+
+/* .disable-event {
+  pointer-events: none;
+  cursor: default;
+} */
+
+.alert {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 18px;
+  color: #c09853;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  }
+  .alert-heading {
+  color: inherit;
+  }
+  .alert .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  line-height: 18px;
+  }
+
+  .alert-success {
+    color: #468847;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    }
+
+    .alert-danger,
+.alert-error {
+color: #b94a48;
+background-color: #f2dede;
+border-color: #eed3d7;
+}
+.alert-info {
+  color: #3a87ad;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  }
+
+  .alert-block {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    }
+
+    .alert-block > p,
+.alert-block > ul {
+margin-bottom: 0;
+}
+.alert-block p + p {
+margin-top: 5px;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+/* Calendar CSS */
+.centerText {
+  text-align: center;
+  color: #3a8f989e;
+}
+
+.muted {
+  background-color: #d5d5d5;
+  color: gray;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.muted:hover {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.currentMonthDays:visited {
+  background-color: #A1887F;
+  color: white;
+}
+
+.tdClass {
+  padding: 8px;
+  line-height: 3.8 !important;
+  font-size: 15px;
+}
+
+.today, .today:hover {
+  background-color: #00897A;
+  color: white;
+  font-weight: bold;
+}
+
+
+.mainYearMonth {
+  text-align: center;
+}
+
+.yearMonth {
+  width: 40%;
+  padding: 10px;
+  background-color: #616161;
+  margin-bottom: 10px;
+  color: white
+}
+
+.oldMonth {
+  background-color: #eaeaea;
+  cursor: not-allowed;
+  pointer-events: none;
+  color: gray;
+}
+
+.oldMonth:hover {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.cal-preview {
+  background-color: white;
+  margin-top: 50px;
+  height: 400px;
+}
+
+.monthChangeGlyphicon {
+  cursor: pointer;
+}
+
+.monthChangeGlyphicon:active {
+  color: gray;
+}
+
+.previewHeader {
+  text-align: center;
+  padding: 10px;
+  background-color: #7f9dc1d1;
+  color: white;
+  font-weight: bold;
+}
+@media only screen and (max-width: 767px) {
+  .cal-preview {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  .yearMonth {
+    width: 100%;
+  }
+}
+
+.daySelected {
+  background-color: #A1887F;
+  color: white;
+}
+
+#irc_pc {
+  border-bottom: 10px solid #fff;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  height: 0;
+  position: absolute;
+  top: -10px;
+  width: 0;
+}
+
+.table-bordered td, .table-bordered th {
+  border: 1px solid #ddd !important
+}
+
+nav ul a {
+  font-size: 1.4rem;
+}
+
+nav ul a:hover {
+  color: #fff;
+  text-decoration: none;
+}

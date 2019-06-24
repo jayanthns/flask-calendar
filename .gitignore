@@ -1,0 +1,15 @@
+.DS_Store
+*.pyc
+.vscode/*
+.idea/*
+*.sqlite3
+.cache/
+*.DS_Store
+*.log
+*.log.*
+.env
+# /static/uploads/*
+# /static/*
+start_dev.sh
+*.sql
+*.pyc
