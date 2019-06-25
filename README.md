@@ -46,8 +46,13 @@ Flask Login ---> [Flask Login](https://flask-login.readthedocs.io/en/latest/)
 #### Applying the migrations
 `flask db upgrade`
 
+#### Create Super user
+`python create_user.py`
+
 #### Running the project
 `flask run`
+or
+`python manage.py`
 or
 `gunicorn --bind 0.0.0.0 wsgi:app --log-level DEBUG --reload`
 
