@@ -8,34 +8,38 @@ Calendar
 {% block body %}
 <br>
 <div class="row">
-  <div id="calender_place_id" class="col s5 offset-s1">
-    <div class="mainYearMonth">
-      <div class="yearMonth">
-        <span class="glyphicon glyphicon-chevron-left monthChangeGlyphicon" style="float: left"
-          onclick="previousMonth()"></span>
-        <span id="year_month_id">Some Date</span>
-        <span class="glyphicon glyphicon-chevron-right monthChangeGlyphicon" style="float: right"
-          onclick="nextMonth()"></span>
+  <div class="col s5">
+    <div id="calender_place_id" class="col s12 offset-s1">
+      <div class="mainYearMonth">
+        <div class="yearMonth">
+          <span class="fas fa-angle-left glyph-icons monthChangeGlyphicon" style="float: left"
+            onclick="previousMonth()"></span>
+          <span id="year_month_id">Some Date</span>
+          <span class="fas fa-angle-right glyph-icons monthChangeGlyphicon" style="float: right"
+            onclick="nextMonth()"></span>
+        </div>
       </div>
+      <table class="table table-bordered" style="background-color: white">
+        <thead>
+          <tr>
+            <th class="centerText" width="14%">Sun</th>
+            <th class="centerText" width="14%">Mon</th>
+            <th class="centerText" width="14%">Tue</th>
+            <th class="centerText" width="14%">Wed</th>
+            <th class="centerText" width="14%">Thu</th>
+            <th class="centerText" width="14%">Fri</th>
+            <th class="centerText" width="14%">Sat</th>
+          </tr>
+        </thead>
+        <tbody id="calendarBody">
+        </tbody>
+      </table>
     </div>
-    <table class="table table-bordered" style="background-color: white">
-      <thead>
-        <tr>
-          <th class="centerText" width="14%">Sun</th>
-          <th class="centerText" width="14%">Mon</th>
-          <th class="centerText" width="14%">Tue</th>
-          <th class="centerText" width="14%">Wed</th>
-          <th class="centerText" width="14%">Thu</th>
-          <th class="centerText" width="14%">Fri</th>
-          <th class="centerText" width="14%">Sat</th>
-        </tr>
-      </thead>
-      <tbody id="calendarBody">
-      </tbody>
-    </table>
   </div>
-  <div id="event_preview_id" class="cal-preview col s4 offset-s1" style="padding: 0">
-    <div class="previewHeader" id="previewDispId">Preview</div>
+  <div class="col s7">
+    <div id="event_preview_id" class="cal-preview col s4 offset-s1" style="padding: 0">
+      <div class="previewHeader" id="previewDispId">Preview</div>
+    </div>
   </div>
 </div>
 {% endblock %}

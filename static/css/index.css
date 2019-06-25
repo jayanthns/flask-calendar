@@ -136,7 +136,7 @@ margin-top: 5px;
 }
 
 .yearMonth {
-  width: 40%;
+  width: 35%;
   padding: 10px;
   background-color: #616161;
   margin-bottom: 10px;
@@ -205,11 +205,11 @@ margin-top: 5px;
   border: 1px solid #ddd !important
 }
 
-nav ul a {
-  font-size: 1.4rem;
-}
-
-nav ul a:hover {
-  color: #fff;
-  text-decoration: none;
+.glyph-icons {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  line-height: 1;
+  font-size: 20px;
+  font-weight: bold;
 }

@@ -17,11 +17,14 @@ from login_manager_helper import *
 # models import
 from models.article import *
 from models.user import *
+from models.calendar import *
 
+# Template View's blueprint
 from apps.index.views import index_blueprint
 from apps.user_app.views import user_blueprint
 from apps.calendar.views import calendar_blueprint
 
+# API View's blueprint
 from apps.article.api.views import article_api_blueprint
 from apps.user_app.api.views import user_api_blueprint
 
