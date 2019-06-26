@@ -5,20 +5,18 @@ Profile
 {% endblock %}
 
 {% block body %}
-<div class="row">
-  <div class="col s12 m6">
-    <div class="card blue-grey darken-1">
-      <div class="card-content white-text">
-        <span class="card-title">Card Title</span>
-        <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-      </div>
-      <div class="card-action">
-        <a href="#">This is a link</a>
-        <a href="#">This is a link</a>
-      </div>
-    </div>
+<div class="row profile-section-1">
+  <div class="center-div center-place">
+    <div class="dot center-place"></div>
+    <div class="center profile-name white-text">{{current_user.username or current_user.email}}</div>
+    <div class="center profile-name white-text">ROLE</div>
   </div>
+</div>
+<div class="row container center">
+  <div class="col s3">About Me</div>
+  <div class="col s3">Resume</div>
+  <div class="col s3">Emergency Contact</div>
+  <div class="col s3">Interests</div>
 </div>
 {% endblock %}
 {% block static_files %}

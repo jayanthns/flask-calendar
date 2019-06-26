@@ -14,6 +14,8 @@ index_blueprint = Blueprint(
 @index_blueprint.route('/', strict_slashes=False)
 @login_required
 def index():
-    if current_user.is_superuser:
+    if current_user.is_anonymous:
+        return redirect(url_for('user.logout'))
+    elif current_user.is_superuser:
         return redirect(url_for('admin.dashboard'))
     return redirect(url_for('calendar.calendar'))

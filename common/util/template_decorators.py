@@ -11,7 +11,9 @@ log = logging.getLogger(__name__)
 def admin_required(fn):
     @wraps(fn)
     def wrapper(*args, **kwargs):
-        if current_user.is_superuser:
+        if current_user.is_anonymous:
+            return redirect(url_for('user.logout'))
+        elif current_user.is_superuser:
             return fn(*args, **kwargs)
         return redirect(url_for('index.index'))
     return wrapper
