@@ -44,6 +44,20 @@ def user_management():
 
 
 @admin_blueprint.route(
+    '/user-management/add-user',
+    strict_slashes=False,
+    methods=['GET', 'POST']
+)
+@login_required
+@admin_required
+def add_user():
+    data = {
+        'nbar': 'u_management'
+    }
+    return render_template('admin/add_user.html', data=data)
+
+
+@admin_blueprint.route(
     '/calendar-management',
     strict_slashes=False
 )
