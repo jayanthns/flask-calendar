@@ -20,6 +20,7 @@ from models.user import *
 from models.calendar import *
 
 # Template View's blueprint
+from apps.admin.views import admin_blueprint
 from apps.index.views import index_blueprint
 from apps.user_app.views import user_blueprint
 from apps.calendar.views import calendar_blueprint
@@ -49,6 +50,7 @@ def register_blueprints(app):
     """Register Flask blueprints."""
     # app.register_blueprint(public.views.blueprint)
     app.register_blueprint(index_blueprint, url_prefix="")
+    app.register_blueprint(admin_blueprint, url_prefix="/admin")
     app.register_blueprint(user_blueprint, url_prefix="/users")
     app.register_blueprint(calendar_blueprint, url_prefix="/calendar")
 

@@ -3,10 +3,20 @@
     <a href="#" class="brand-logo"> Logo </a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
       {% if current_user.is_authenticated %}
+      {% if current_user.is_superuser %}
+      <li class="{% if data.nbar == 'u_management' %}active disable-event{% endif %}"><a
+          href="{{ url_for('admin.user_management') }}">User Management</a>
+      </li>
+      <li class="{% if data.nbar == 'c_management' %}active disable-event{% endif %}"><a
+          href="{{ url_for('admin.calendar_management') }}">Calendar
+          Management</a>
+      </li>
+      {% else %}
       <li class="{% if data.nbar == 'calendar' %}active disable-event{% endif %}"><a
           href="{{ url_for('calendar.calendar') }}">My Calendar</a></li>
       <li class="{% if data.nbar == 'profile' %}active disable-event{% endif %}"><a
           href="{{ url_for('user.profile') }}">Profile</a></li>
+      {% endif %}
       <li><a href="{{ url_for('user.logout') }}">Logout</a></li>
       {% else %}
       <li class="{% if data.nbar == 'login' %}active disable-event{% endif %}"><a

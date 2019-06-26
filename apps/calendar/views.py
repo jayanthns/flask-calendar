@@ -8,8 +8,6 @@ from flask import (
 )
 from flask_login import login_required
 
-from common.util.template_decorators import is_logged_in
-
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger(__name__)
 

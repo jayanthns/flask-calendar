@@ -10,13 +10,18 @@ Calendar
 <div class="row">
   <div class="col s5">
     <div id="calender_place_id" class="col s12 offset-s1">
-      <div class="mainYearMonth">
-        <div class="yearMonth">
-          <span class="fas fa-angle-left glyph-icons monthChangeGlyphicon" style="float: left"
-            onclick="previousMonth()"></span>
-          <span id="year_month_id">Some Date</span>
-          <span class="fas fa-angle-right glyph-icons monthChangeGlyphicon" style="float: right"
-            onclick="nextMonth()"></span>
+      <div class="row yearMonth">
+        <div class="mainYearMonth col s4">
+          <div class="">
+            <span title="Previous Month" class="fas fa-angle-left glyph-icons monthChangeGlyphicon" style="float: left"
+              onclick="previousMonth()"></span>
+            <span id="year_month_id">Some Date</span>
+            <span title="Next Month" class="fas fa-angle-right glyph-icons monthChangeGlyphicon" style="float: right"
+              onclick="nextMonth()"></span>
+          </div>
+        </div>
+        <div class="col s1">
+          <span title="Reset Date" class="fas fa-undo glyph-icons monthResetGlyphicon" onclick="resetMonth()"></span>
         </div>
       </div>
       <table class="table table-bordered" style="background-color: white">
@@ -115,9 +120,16 @@ Calendar
       c_month = 1;
     }
     else {
-      c_month += 1
+      c_month += 1;
     }
-    callCalDaysMethod(c_year, c_month)
+    callCalDaysMethod(c_year, c_month);
+  }
+
+  function resetMonth() {
+    var date = new Date();
+    var year = date.getFullYear();
+    var month = date.getMonth() + 1;
+    callCalDaysMethod(year, month);
   }
 
   function disablePrevious(year, month) {
