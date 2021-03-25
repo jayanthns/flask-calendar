@@ -49,7 +49,7 @@ python-dateutil==2.8.0
 python-dotenv==0.10.2
 python-editor==1.0.4
 pytz==2018.9
-PyYAML==5.1
+PyYAML==5.4
 singledispatch==3.4.0.3
 six==1.12.0
 snowballstemmer==1.2.1
