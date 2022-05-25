@@ -41,7 +41,7 @@ pycodestyle==2.5.0
 pycparser==2.19
 pydocstyle==3.0.0
 pyflakes==2.0.0
-PyJWT==1.7.1
+PyJWT==2.4.0
 pylint==1.9.3
 PyMySQL==0.9.3
 pyrsistent==0.15.2
